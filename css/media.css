@@ -1,11 +1,10 @@
-@media only screen and (min-width: 700px) {
-	.btn {
-		padding: 1.3rem 2rem;
-		font-size: 2rem;
-	}
-}
-
 @media only screen and (min-width: 768px) {
+/* Nav Section */
+	.nav__wrapper .logo {
+		max-width: 16%;
+	}
+/* Nav Section */
+
 	.dishGrid__title {
 		font-size: 2.4rem;
 	}
@@ -26,12 +25,139 @@
 		font-size: 2rem;
 		margin-bottom: 1rem;
 	}
+
+/* Store info section styles*/
+	.storeInfo__wrapper {
+		gap: 2rem;
+	}
+	.storeInfo__item {
+		min-width: 200px;
+		padding: 40px 0;
+	}
+	.storeInfo__icon {
+		width: 47px;
+		margin-bottom: 2.5rem;
+	}
+	.storeInfo__title {
+		font-size: 1.8rem;
+		margin-bottom: 1rem;
+	}
+	.storeInfo__text {
+		font-size: 1.6rem;
+	}
+/* Store info section styles*/
+
+/* Footer Styles */
+	footer {
+		padding-top: 8rem;
+		padding-bottom: 4rem;
+	}
+
+	.footer__wrapper {
+		flex-direction: row;
+	}
+
+	.footer__col1 {
+		flex: 4;
+	}
+
+	.footer__col2, .footer__col3, .footer__col4 {
+		flex: 2;
+	}
+	
+	.footer__desc {
+		max-width: 300px;
+		font-size: 1.8rem;
+		margin-bottom: 2.5rem;
+	}
+
+	.footer__socials__title {
+		font-size: 2rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.footer__text__title {
+		font-size: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.footer__text a {
+		font-size: 1.8rem;
+		margin-bottom: 1rem;
+	}
+
+	#copyright {
+		padding: 1rem 0;
+	}
+
+	.copyright__text {
+		font-size: 1.34rem;
+		text-align: center;
+	}
+/* Footer Styles */
+
+/* Form Styles */
+	#form {
+		padding: 5rem 0;
+	}
+
+	.form__title {
+		font-size: 1.8rem;
+		color: var(--black-1);
+		font-weight: 600;
+	}
+
+	.form__wrapper {
+		padding: 3rem 0;
+	}
+
+	.form__wrapper form {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+
+	.form__group label {
+		font-size: 1.6rem;
+		font-family: Poppins;
+		color: var(--black-2);
+		font-weight: 500;
+	}
+
+	.form__group input, .form__group textarea, .form__group select {
+		width: 100%;
+		font-size: 1.4rem;
+		font-family: Raleway;
+		font-weight: 600;
+		border: none;
+		background-color: var(--lightRed-1);
+		border-radius: 8px;
+		color: var(--black-2);
+		padding: 1.5rem;
+		margin-top: 0.5rem;
+	}
+
+	.form__group textarea {
+		resize: vertical;
+	}
+
+	.form__wrapper button[type='submit'] {
+		width: 34%;
+		font-weight: 500;
+		letter-spacing: 0.1rem;
+		border: none;
+	}
+/* Form Styles */
 }
 
 @media only screen and (max-width: 768px) {
+    /* Nav Section */
+	.nav__wrapper .logo {
+		max-width: 16%;
+	}
 	.nav {
 		position: relative;
-		/* overflow-x: scroll; */
+	/* overflow-x: scroll; */
 	}
 	.nav__icon {
 		display: block;
@@ -77,16 +203,116 @@
 		font-size: 1.6rem;
 	}
 	.nav__bgOverlay {
+		width: 100%;
+		height: 100vh;
 		position: absolute;
 		left: 0;
 		top: 0;
 		z-index: 1000;
-		height: 100vh;
-		width: 100%;
 		background: rgba(18, 24, 14, 0.808);
 		display: none;
 	}
 	.nav__bgOverlay.active {
 		display: block;
 	}
+/* Nav Section */
+
+/* Hero Section Styles */
+    .hero__imgWrapper {
+        margin: 0 auto;
+    }
+/* Hero Section Styles */
+
+/* Top Dishes */
+    .dishGrid__item__info {
+        text-align: center;
+        margin: 1rem 0 -6rem 0;
+    }
+
+    .dishGrid__item__stars {
+        margin: 0 auto;
+    }
+
+    .dishGrid__wrapper {
+        gap: 3rem;
+    }
+/* Top Dishes */
+
+/* Testimonial Section */
+    .testimonial__item__stars {
+        width: 40%;
+    }
+/* Testimonial Section */
+
+/* Our Specials Menu Styles */
+    .ourSpecials__item__img {
+        margin-bottom: 20px;
+    }
+
+    .ourSpecials__menu {
+        background-color: var(--lightRed-1);
+        border-radius: 12px;
+		padding: 2rem;
+	}
+/* Our Specials Menu Styles */
+
+    /* Footer */
+    .copyright__text {
+        font-size: 1.2rem;
+        line-height: 2.2rem;
+    }
+    /* Footer */
+
+	/* Form Styles */
+	#form {
+		padding: 5rem 0;
+	}
+
+	.form__title {
+		font-size: 1.8rem;
+		color: var(--black-1);
+		font-weight: 600;
+	}
+
+	.form__wrapper {
+		padding: 3rem 0;
+	}
+
+	.form__wrapper form {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+
+	.form__group label {
+		font-size: 1.6rem;
+		font-family: Poppins;
+		color: var(--black-2);
+		font-weight: 500;
+	}
+
+	.form__group input, .form__group textarea, .form__group select {
+		width: 100%;
+		font-size: 1.4rem;
+		font-family: Raleway;
+		font-weight: 600;
+		border: none;
+		background-color: var(--lightRed-1);
+		border-radius: 8px;
+		color: var(--black-2);
+		padding: 1.5rem;
+		margin-top: 0.5rem;
+	}
+
+	.form__group textarea {
+		resize: vertical;
+	}
+
+	.form__wrapper button[type='submit'] {
+		width: 34%;
+		font-weight: 500;
+		letter-spacing: 0.1rem;
+		border: none;
+	}
+/* Form Styles */
 }

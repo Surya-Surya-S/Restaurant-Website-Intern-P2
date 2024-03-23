@@ -39,6 +39,7 @@ img {
 
 h1, h2, h3, h4 {
 	font-family: Poppins;
+	color: #2f0005b8;
 }
 
 .page__title__text, .ourSpecials__title {
@@ -52,7 +53,7 @@ h1, h2, h3, h4 {
 p {
 	font-family: Raleway;
 	font-weight: 400;
-	line-height: 1.4em;
+	line-height: 1.6em;
 	font-size: 1.8rem;
 }
 

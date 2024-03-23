@@ -4,6 +4,7 @@ const navIconEl = document.querySelector('.nav__icon');
 const navBgOverlayEl = document.querySelector('.nav__bgOverlay');
 
 
+
 window.addEventListener('DOMContentLoaded', () =>{
   document.body.style.visibility = 'visible';
 });
@@ -38,10 +39,60 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 });
 
-// const dishGridEl = Array.from(document.querySelectorAll('#dishGrid'));
-// if (dishGridEl.length > 0){
-//   // console.log(dishGridEl)
-//   dishGridEl.forEach(item => {
-//     item.setAttribute('data-aos', 'fade-up');
-//   })
-// }
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.getElementById('signupForm');
+
+  form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      const username = document.getElementById('username').value;
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+
+      const usernameError = document.getElementById('usernameError');
+      const emailError = document.getElementById('emailError');
+      const passwordError = document.getElementById('passwordError');
+
+      usernameError.textContent = '';
+      emailError.textContent = '';
+      passwordError.textContent = '';
+
+      if (username.trim() === '') {
+          usernameError.textContent = 'Username is required';
+          return;
+      }
+
+      if (username.length < 6) {
+          usernameError.textContent = 'Username must be at least 6 characters long';
+          return;
+      }
+
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+          emailError.textContent = 'Invalid email format';
+          return;
+      }
+
+      if (password.trim() === '') {
+          passwordError.textContent = 'Password is required';
+          return;
+      }
+
+      if (password.length < 6) {
+          passwordError.textContent = 'Password must be at least 6 characters long';
+          return;
+      }
+
+      if (!/[0-9]/.test(password) || !/[!@#$%^&*]/.test(password)) {
+          passwordError.textContent = 'Password must contain at least one number and one special character';
+          return;
+      }
+
+      // If all validations pass, you can proceed with signup
+      alert('Sign up successful!');
+      // You can submit the form here if needed
+      // form.submit();
+  });
+});
+
+
+

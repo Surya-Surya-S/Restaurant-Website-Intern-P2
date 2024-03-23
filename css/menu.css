@@ -17,9 +17,6 @@
 	}
 }
 /* Our Specials Menu Styles */
-#ourSpecials {
-	padding: 0;
-}
 .ourSpecials__title {
 	font-size: 1.8rem;
 	color: var(--black-1);
@@ -27,20 +24,15 @@
 }
 .ourSpecials__wrapper {
 	display: flex;
-	gap: 1.5rem;
+	gap: 3rem;
 	flex-direction: column;
 	max-width: 400px;
 }
 .ourSpecials__item {
-	flex: 1;
-	display: flex;
-	gap: 2rem;
-	background-color: var(--lightRed-1);
-	padding: 1.5rem;
-	border-radius: 12px;
+    flex: 1;
 }
-.ourSpecials__item__img,
-.ourSpecials__item__info {
+
+.ourSpecials__item__img, .ourSpecials__item__info {
 	flex: 1;
 }
 .ourSpecials__item__img {
@@ -75,9 +67,13 @@
 		gap: 2rem;
 		max-width: none;
 	}
-	.ourSpecials__item {
+
+	.ourSpecials__menu {
+        display: flex;
+        gap: 2rem;
+        background-color: var(--lightRed-1);
+        border-radius: 12px;
 		padding: 3rem;
-		gap: 2rem;
 	}
 	.ourSpecials__item__title {
 		font-size: 3rem;

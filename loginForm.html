@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="css/formStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<!-- form_validation -->
+<div class="form">
+    <div class="container">
+        <div class="form_validation">
+            <h1 id="title">Sign Up</h1>
+            <form id="signupForm">
+                <div class="input_group">
+                    <div>
+                        <div class="input_field" id="nameField">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" id="username" placeholder="User name">
+                        </div>
+                        <div class="errorMessage">
+                            <div id="usernameError" class="error-message"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="input_field">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" id="email" placeholder="Email">
+                        </div>
+                        <div class="errorMessage">
+                            <div id="emailError" class="error-message"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="input_field">
+                            <i class="fa-solid fa-key"></i>
+                            <input type="password" id="password" placeholder="Password">
+                        </div>
+                        <div class="errorMessage">
+                            <div id="passwordError" class="error-message"></div>
+                        </div>
+                    </div>
+                    <p>Forgot password <a href="#">click here</a></p>
+                </div>
+                <div class="btn_field">
+                    <button type="button" id="signupBtn">Sign Up</button>
+                    <button type="button" id="signinBtn" class="disable">Sign In</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- form_validation -->
+
+<!-- script_start -->
+    <script src="js/formValidation.js"></script>
+<!-- script_end -->
+</body>
+</html>

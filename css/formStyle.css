@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(25,0,0,0.8), rgba(25,0,0,0.8));
+    margin: 0 auto;
+    position: relative;
+}
+
+.form{
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.form_validation{
+    width: 90%;
+    max-width: 250px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: #f5dadb;
+    padding: 40px 40px 60px;
+}
+
+h1{
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    color: #cf4a4e;
+    position: relative;
+    padding: 0 0 16px;
+    margin-bottom: 30px;
+}
+
+h1::after{
+    content: "";
+    width: 10%;
+    height: 6px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #473334;
+    border-radius: 4px;
+    position: absolute;
+}
+
+.form_validation input{
+    width: 100%;
+    font-size: 16px;
+    color: #dd8083;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    padding: 14px;
+
+}
+
+.input_field{
+    display: flex;
+    align-items: center;
+    background-color: #faeced;
+    margin: 30px 0 10px;
+    border-radius: 4px;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+.error-message{
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+    text-align: left;
+    color: #cf4a4e;
+}
+
+.input_field i{
+    font-size: 18px;
+    color: #dd8083;
+    padding-left: 10px;
+}
+
+::placeholder {
+    color: #dd8083;
+}
+
+.form_validation p{
+    font-size: 0.8rem;
+    line-height: 1.8rem;
+    font-weight: 600;
+    color: #473334;
+    text-align: left;
+    margin: 20px 0 40px;
+}
+
+.form_validation p a{
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #dd8083;
+}
+
+.btn_field{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn_field button{
+    flex-basis: 48%;
+    font-size: 18px;
+    background-color: #cf4a4e;
+    color: #fff;
+    border-radius: 34px;
+    border: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+#signinBtn {
+    text-align: center; /* By default, center align the button */
+}
+
+#signupBtn[style*="display: none;"] + #signinBtn {
+    text-align: center;
+    margin: 0 auto; 
+}
+
