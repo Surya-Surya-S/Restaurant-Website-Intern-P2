@@ -550,7 +550,7 @@
 
 /* Newsletter Section */
 .newsletter__wrapper {
-	flex-direction: row;
+	flex-direction: column;
 	padding: 5rem;
 	align-items: center;
 }
