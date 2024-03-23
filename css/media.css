@@ -226,7 +226,7 @@
 /* Top Dishes */
     .dishGrid__item__info {
         text-align: center;
-        margin: 1rem 0 -6rem 0;
+        margin: 1rem 0 -2rem 0;
     }
 
     .dishGrid__item__stars {
@@ -260,6 +260,7 @@
     .copyright__text {
         font-size: 1.2rem;
         line-height: 2.2rem;
+		text-align: center;
     }
     /* Footer */
 
