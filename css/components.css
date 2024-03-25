@@ -13,7 +13,7 @@
 }
 
 .nav__wrapper .logo{
-	max-width: 8%;
+	max-width: 10%;
 }
 
 .nav__list li {
@@ -162,7 +162,7 @@ footer {
 }
 
 .footer__logo {
-	width: 86px;
+	width: 120px;
 	margin-bottom: 2rem;
 }
 

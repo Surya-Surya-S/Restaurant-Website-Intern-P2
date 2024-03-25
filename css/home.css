@@ -338,15 +338,17 @@
 
 /* Newsletter Section */
 .newsletter__wrapper {
+	width: 70%;
 	display: flex;
 	flex-direction: column;
 	background-color: var(--red-2);
-	padding: 1.5rem;
+	padding: 5rem;
 	border-radius: 8px;
 	gap: 2rem;
+	margin: 0 auto;
 }
 .newsletter__title {
-	font-size: 1.8rem;
+	font-size: 3rem;
 	color: var(--black-1);
 	font-weight: 600;
 	margin-bottom: 1.3rem;

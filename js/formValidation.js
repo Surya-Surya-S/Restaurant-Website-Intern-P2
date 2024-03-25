@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Validate password
         const passwordRegex = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-zA-Z]).{10,}$/;
         if (!passwordRegex.test(passwordField.value.trim())) {
-            passwordError.textContent = 'Password must be at least 10 characters long and contain at least one number, one symbol character, and one letter';
+            passwordError.textContent = 'Password must be at least 10 characters long and one number, one symbol, and one letter';
             return; // Stop execution if password is invalid
         }
 

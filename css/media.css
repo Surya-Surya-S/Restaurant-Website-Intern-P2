@@ -202,6 +202,12 @@
 }
 /* Discount Styles */
 
+/* Newsletter Section */
+.newsletter__wrapper {
+	padding: 5rem;
+}
+/* Newsletter Section */
+
 /* Events Media Styles */
 .eventsMedia__wrapper {
 	gap: 2rem;
@@ -423,7 +429,7 @@
 
 	/* Nav Section */
 	.nav__wrapper .logo {
-		max-width: 16%;
+		max-width: 24%;
 	}
 	.nav {
 		position: relative;
@@ -551,19 +557,19 @@
 /* Newsletter Section */
 .newsletter__wrapper {
 	flex-direction: column;
-	padding: 5rem;
+	padding: 2rem;
 	align-items: center;
 }
 .newsletter__info, .newsletter__form {
 	flex: 1;
 }
 .newsletter__title {
-	font-size: 3.6rem;
+	font-size: 3rem;
 	margin-bottom: 2rem;
 }
 .newsletter__text {
-	font-size: 1.8rem;
-	line-height: 2.8rem;
+	font-size: 1.4rem;
+	line-height: 2.4rem;
 	max-width: 400px;
 }
 .newsletter__form {
